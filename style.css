@@ -76,7 +76,7 @@ button:hover {
 /* Heading */
 
 .h3,
-label[for='new__task'] {
+.label[for='new__task'] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -86,7 +86,7 @@ label[for='new__task'] {
     text-transform: uppercase;
 }
 
-input[type="text"] {
+.input[type="text"] {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -99,13 +99,13 @@ input[type="text"] {
     color: #888;
 }
 
-input[type="text"]:focus {
+.input[type="text"]:focus {
     color: #333;
 }
 
 /* New Task */
 
-label[for='new__task'] {
+.label[for='new__task'] {
     display: block;
     margin: 0 0 20px;
 }
@@ -129,14 +129,14 @@ input[type="checkbox"] {
     margin: 0 10px;
 }
 
-.li label {
+.li.label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-input[type="text"] {
+.input[type="text"] {
     width: 226px;
 }
 
