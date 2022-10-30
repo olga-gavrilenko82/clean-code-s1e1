@@ -59,7 +59,7 @@ li,
     outline: none;
 }
 
-.button {
+button {
     background: none;
     border: 0px;
     color: #888;
@@ -69,14 +69,14 @@ li,
     cursor: pointer;
 }
 
-.button:hover {
+button:hover {
     color: #3a3A3a;
 }
 
 /* Heading */
 
 .h3,
-.label__new_task {
+label[for='new__task'] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -86,7 +86,7 @@ li,
     text-transform: uppercase;
 }
 
-.input.task {
+input[type="text"] {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -99,13 +99,13 @@ li,
     color: #888;
 }
 
-input.task:focus {
+input[type="text"]:focus {
     color: #333;
 }
 
 /* New Task */
 
-.label__new_task {
+label[for='new__task'] {
     display: block;
     margin: 0 0 20px;
 }
@@ -116,7 +116,7 @@ input.task:focus {
 
 /* Task list */
 
-.li {
+li {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -125,28 +125,28 @@ input.task:focus {
     align-items: center;
 }
 
-.input {
+input[type="checkbox"] {
     margin: 0 10px;
 }
 
-li .label {
+.li label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-li .input.task {
+input[type="text"] {
     width: 226px;
 }
 
-.button.delete img {
+button.delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-.button.delete img:hover {
+button.delete img:hover {
     transform: rotateZ(0);
 }
 
@@ -159,15 +159,15 @@ li .input.task {
 
 /* Edit Task */
 
-.li .input.task {
+li input[type="text"] {
     display: none;
 }
 
-.li.edit__mode .input.task {
+li.edit__mode input[type="text"] {
     display: inline-block;
     width: 224px;
 }
 
-.li.edit__mode .label {
+li.edit__mode label {
     display: none;
 }
