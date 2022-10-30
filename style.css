@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.wrapper {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
@@ -28,7 +28,7 @@ body {
 
 }
 
-.main__page {
+.main__wrapper {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -50,11 +50,11 @@ ul {
 }
 
 li, 
-h3 {
+.h3 {
     list-style: none;
 }
 
-input,
+.input,
 .button {
     outline: none;
 }
@@ -75,7 +75,7 @@ input,
 
 /* Heading */
 
-h3,
+.h3,
 .label__new_task {
     color: #333;
     font-weight: 700;
@@ -86,7 +86,7 @@ h3,
     text-transform: uppercase;
 }
 
-input[type="text"] {
+.input.task {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -99,7 +99,7 @@ input[type="text"] {
     color: #888;
 }
 
-input[type="text"]:focus {
+input.task:focus {
     color: #333;
 }
 
@@ -110,13 +110,13 @@ input[type="text"]:focus {
     margin: 0 0 20px;
 }
 
-input#new__task {
+#new__task {
     width: 318px;
 }
 
 /* Task list */
 
-li {
+.li {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -125,22 +125,18 @@ li {
     align-items: center;
 }
 
-li > * {
-    vertical-align: middle;
-}
-
-li > input[type="checkbox"] {
+.input {
     margin: 0 10px;
 }
 
-li > label {
+li .label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-li >    input[type="text"] {
+li .input.task {
     width: 226px;
 }
 
@@ -156,22 +152,22 @@ li >    input[type="text"] {
 
 /* Completed */
 
-ul#completed__tasks label {
+#completed__tasks .label {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
 
-ul li input[type="text"] {
+.li .input.task {
     display: none;
 }
 
-ul li.edit__mode input[type="text"] {
+.li.edit__mode .input.task {
     display: inline-block;
     width: 224px;
 }
 
-ul li.edit__mode label {
+.li.edit__mode .label {
     display: none;
 }
